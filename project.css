@@ -1,0 +1,255 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.background {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: #000;
+    font-family: 'Arial', sans-serif;
+    color: #e0e0e0;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #090909;
+    color: whitesmoke;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 25px;
+    color: rgb(172, 172, 172);
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.sp:hover{
+    font-size: 15px;
+    color: #008080;
+}
+
+a {
+    font-size: 15px;
+    text-decoration: none;
+    color: whitesmoke;
+    transition: .3s ease-in-out;
+}
+
+.menu {
+    display: none;
+}
+
+a:hover {
+    font-size: 15.5px;
+    color: #008080;
+}
+
+.Portfolio {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 30px;
+    padding-right: 30px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 18px;
+    color: rgb(172, 172, 172);
+}
+
+/* Hold Section */
+h1 {
+    text-align: center;
+    margin: 100px 0 30px;
+    font-size: 40px;
+    color: #00b3b3;
+}
+
+h3{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 12px;
+}
+
+p {
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto 50px;
+    line-height: 30px;
+    font-size: 19px;
+    color: #c2c2c2;
+}
+
+.hold {
+    width: 100%;
+    padding: 0 5%;
+}
+
+.gridproject {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.box {
+    margin-top: 50px;
+    height: 350px;
+    border-radius: 20px;
+    display: grid;
+    background-color: #1a1a1a;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 191, 174, 0.3);
+}
+
+.holdimage1 {
+    width: 100%;
+    height: 250px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-image: url(table.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.holdimage3 {
+    width: 100%;
+    height: 250px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-image: url(project1\ \(2\).png);
+    background-size: cover;
+    background-position: center;
+}
+
+.holdimage2 {
+    width: 100%;
+    height: 250px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-image: url(project1\ \(1\).png);
+    background-size: cover;
+    background-position: center;
+}
+
+.holdtext {
+    width: 100%;
+    height: 100px;
+    background-color: #333;
+    padding: 15px;
+    color: #00b3b3;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+button {
+    width: 100%;
+    max-width: 400px;
+    height: 40px;
+    background-color: #00bfae;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #019a8b;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(20%) brightness(0.85);
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .header {
+        position: sticky;
+        top: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: #090909;
+        color: whitesmoke;
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 18px;
+        padding-left: 15px;
+    }
+
+    .button, .Portfolio {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        padding-top: 10px;
+    }
+
+    .bars {
+        font-size: 30px;
+        transition: .3s ease-in-out;
+    }
+
+    .bars:hover {
+        color: #008080;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 500px) {
+    .logo {
+        font-size: 16px;
+    }
+
+    p {
+        width: 90%;
+        font-size: 17px;
+    }
+    .menu {
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        padding-top: 10px;
+    }
+    .header {
+        position: sticky;
+        top: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: #090909;
+        color: whitesmoke;
+        padding: 10px;
+    }
+}

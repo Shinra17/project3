@@ -1,0 +1,856 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.background{
+    width: 1350px;
+    margin: 0 auto;
+    background-color: #000000;
+    font-family: sans-serif;
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1rem;
+    background-color: #090909;
+    color: whitesmoke;
+    padding: 20px;
+}
+
+.logo{
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 25px;
+    color: rgb(172, 172, 172);
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.sp{
+    color: #008080;
+}
+a{
+    font-size: 15px;
+    text-decoration: none;
+    color: whitesmoke;
+    transition: .3s ease-in-out;
+}
+
+
+.sp:hover{
+    font-size: 15px;
+    color: #008080;
+}
+
+.menu{
+    display: none;
+}
+
+a:hover{
+    font-size: 15.5px;
+    color: #008080;
+}
+
+.Portfolio{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 30px;
+    padding-right: 30px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 31;
+    color: rgb(172, 172, 172);
+}
+
+
+
+
+.body{
+    width: 100%;
+    height: 21rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.myinfo{
+    background-image: radial-gradient(rgba(0,0,0,0), rgba(0,0,0,1)), url(bg1.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.pic{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: 2px solid rgb(198, 198, 198);
+    margin: 0 auto;
+    margin-top: 20px;
+    background-image: url(no_bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.name{
+    color: rgb(229, 228, 228);
+    margin-top: 10px;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(229, 228, 228);
+}
+
+h2{
+    font-size: 20px;
+    text-align: center;
+    color: #008080;
+}
+
+
+
+.title1_1, .title1_2{
+    color: #E0E0E0;
+    text-align: justify;
+}
+
+.title1_1{
+    font-size: 25px;
+}
+
+.title1_2{
+    font-size: 30px;
+}
+
+.bgabout {
+    width: 1350px;
+    height: 100vh;
+    margin-top: 100px;
+    color: #ffffff;
+    background-color: #141414;
+    border: 1px solid #333;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 30px;
+}
+
+.photo1 {
+    width: 500px;
+    height: 500px;
+    background-image: url(myBG.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.abouttext {
+    width: 700px;
+    height: 500px;
+}
+
+.atext {
+    margin-top: 50px;
+    font-size: 19px;
+    text-align: justify;
+    color: #e6e6e6;
+    line-height: 25px;
+}
+
+.basicInfo {
+    margin-top: 40px;
+}
+
+.birth {
+    display: flex;
+}
+
+h3 {
+    font-size: 23px;
+    color: #ffffff;
+}
+
+h5 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #aaaaaa;
+}
+
+h6 {
+    font-size: 18px;
+    font-weight: 300;
+    margin-left: 10px;
+    color: #999999;
+}
+
+
+.interest{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.gridinterest {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    height: 100px;
+    width: 1100px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.hobby {
+    text-align: center;
+}
+
+.hobby1 {
+    width: 180px;
+    height: 50px;
+    background-color: #202020;
+    border-radius: 3px;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+    display: flex;
+    color: #ffffff;
+    margin-left: 25px;
+}
+
+.hobbyicon, .hobbyicon2, .hobbyicon3, .hobbyicon4, .hobbyicon5 {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+
+.hobbyicon {
+     background-image: url(volleyball.png); 
+    }
+.hobbyicon2 { 
+    background-image: url(takraw.png); 
+}
+.hobbyicon3 {
+     background-image: url(basketball.png); 
+    }
+.hobbyicon4 {
+     background-image: url(photography.webp);
+     }
+.hobbyicon5 { 
+    background-image: url(videography.png);
+ }
+
+.hobbytext {
+    margin-top: 15px;
+    margin-left: 20px;
+    color: #ffffff;
+}
+
+
+
+/* services */
+
+
+.services {
+    width: 100%;
+    height: 70vh;
+    background-color: #1a1a1a;
+}
+
+.servicedesign {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #e6e6e6;
+    padding-top: 30px;
+    font-size: 25px;
+}
+
+.titleservice {
+    text-align: center;
+    color: #e6e6e6;
+    font-size: 30px;
+}
+
+.gridservices {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    background-color: transparent;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.b1 {
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    background-color: #222;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.08);
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+    margin: 0 auto;
+}
+
+.icon {
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+
+i{
+    margin-top: 20px;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color:  #00b3b3;
+}
+
+.icontext {
+    text-align: center;
+    color: #f0f0f0;
+}
+
+.captionicon {
+    text-align: justify;
+    color: #cfcfcf;
+    line-height: 25px;
+}
+
+
+
+
+@media (max-width: 1024px) {
+    .background{
+        width: 100%;
+        margin: 0 auto;
+        background-color: black;
+        font-family: 'Lora', serif;
+    }
+    
+        .header{
+            position: sticky;
+            top: 0;
+            display: grid;
+            width: 100%;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 2rem;
+            background-color: #090909;
+            color: whitesmoke;
+            padding: 10px;
+        }
+    
+        .logo{
+            font-size: 15px;
+            font-family: 'Dancing Script', cursive;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            padding-left: 15px;
+            color: rgb(172, 172, 172);
+        }
+    
+        a{
+            display: none;
+        }
+        .Portfolio{
+            display: none;
+        }
+    
+        .menu{
+            display: block;
+            display: flex;
+            justify-content: end;
+            align-items: end;
+            padding-top: 40px;
+
+            
+        }
+        .bars{
+            font-size: 30px;
+            transition: .3s ease-in-out;
+        }
+    
+        .bars:hover{
+            font-size: 30.5px;
+            color: #008080;
+        }
+
+        .myinfo{
+            background-image: radial-gradient(rgba(0,0,0,0), rgba(0,0,0,8)), url(bg1.jpg);
+            background-size: cover;
+            background-position: bottom;
+        }
+
+        .body{
+            width: 100%;
+            height: 15rem;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .ako{
+            font-size: 25px;
+        }
+
+        .bodycaption{
+            font-size: 18px;
+        }
+        
+
+        .pic{
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            border: 2px solid rgb(198, 198, 198);
+            margin: 0 auto;
+            margin-top: 20px;
+            background-image: url(no_bg.png);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .name{
+            color: rgb(229, 228, 228);
+            margin-top: 10px;
+        }
+        
+        h1{
+            text-align: center;
+            font-size: 30px;
+            color: rgb(229, 228, 228);
+        }
+        
+        h2{
+            font-size: 20px;
+            text-align: center;
+            color: #008080;
+        }
+
+        /* bgabout */
+
+        .bgabout {
+            width: 109%;
+            height: 150vh;
+            margin-top: 100px;
+            color: #ffffff;
+            background-color: #141414;
+           
+        }
+        
+        .about {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1px;
+            padding: 20px;
+           margin-left: 20px;
+        }
+
+        .photo1 {
+            margin-top: 20px;
+            width: 95%;
+            height: 600px;
+            background-image: url(myBG.jpg);
+            background-size:cover;
+            background-position: center;
+        }
+        
+        .abouttext {
+            width: 80%;
+            height: auto;
+        }
+        
+        .atext {
+            width: 100%;
+            margin-top: 50px;
+            font-size: 19px;
+            text-align: justify;
+            color: #e6e6e6;
+        }
+        
+        .basicInfo {
+            margin-top: 40px;
+        }
+        
+        .birth {
+            display: flex;
+        }
+        
+        h3 {
+            font-size: 23px;
+            color: #ffffff;
+        }
+        
+        h5 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            color: #aaaaaa;
+        }
+        
+        h6 {
+            font-size: 18px;
+            font-weight: 300;
+            margin-left: 10px;
+            color: #999999;
+        }
+
+        /* interest */
+
+        .hobby {
+            text-align: center;
+            margin-top: 10rem;
+            margin-left: -51px;
+        }
+
+        .gridinterest {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            height: 100px;
+            width: 108%;
+            margin: 0 auto;
+            margin-top: 4rem;margin-left: 15px;
+            padding: 10px;
+        }
+        .interest{
+            padding-left: -10px;
+        }
+
+        .titlehobby{
+            margin: 0 auto;
+        }
+
+        .hobby1 {
+            width: 150px;
+            height: 50px;
+            background-color: #202020;
+            border-radius: 3px;
+            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+            display: flex;
+            color: #ffffff;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            margin-left: 15px;
+        }
+
+
+        /* services */
+
+
+        .services {
+            width: 100%;
+            height: 100vh;
+            background-color: #1a1a1a;
+        }
+
+        .servicedesign {
+            margin-bottom: 20px;
+            text-align: center;
+            color: #e6e6e6;
+            font-size:25px ;
+            padding-top: 30px;
+        }
+
+        .titleservice {
+            text-align: center;
+            color: #e6e6e6;
+            font-size: 20px;
+        }
+
+        .gridservices {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1px;
+            background-color: transparent;
+            margin: 0 auto;
+            padding-left: 73px;
+            margin-top: 70px;
+            gap: 50px;
+        }
+
+        .b1 {
+            width: 300px;
+            height: 300px;
+            border-radius: 10%;
+            margin-top: 100px;
+            background-color: #222;
+            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.08);
+            padding-left: 20px;
+            padding-right: 20px;
+            color: #ffffff;
+            margin: 0 auto;
+            margin-left: 10px;
+            
+        }
+}
+
+
+
+
+
+@media (max-width: 500px) {
+    .background{
+        width: 100%;
+        margin: 0 auto;
+        background-color: black;
+        font-family: 'Lora', serif;
+    }
+    
+        .header{
+            position: sticky;
+            top: 0;
+            display: grid;
+            width: 100%;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 2rem;
+            background-color: #090909;
+            color: whitesmoke;
+            padding: 10px;
+        }
+    
+        .logo{
+            font-size: 15px;
+            font-family: 'Dancing Script', cursive;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            padding-left: 15px;
+            color: rgb(172, 172, 172);
+        }
+    
+        a{
+            display: none;
+        }
+        .Portfolio{
+            display: none;
+        }
+    
+        .menu{
+            display: block;
+            display: flex;
+            justify-content: end;
+            align-items: end;
+            padding-top: 40px;
+            
+        }
+        .bars{
+            font-size: 30px;
+            transition: .3s ease-in-out;
+        }
+    
+        .bars:hover{
+            font-size: 30.5px;
+            color: #008080;
+        }
+
+        .myinfo{
+            background-image: radial-gradient(rgba(0,0,0,0), rgba(0,0,0,8)), url(bg1.jpg);
+            background-size: cover;
+            background-position: bottom;
+        }
+
+        .body{
+            width: 100%;
+            height: 15rem;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+        
+
+        .pic{
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            border: 2px solid rgb(198, 198, 198);
+            margin: 0 auto;
+            margin-top: 20px;
+            background-image: url(no_bg.png);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .name{
+            color: rgb(229, 228, 228);
+            margin-top: 10px;
+        }
+        
+        h1{
+            text-align: center;
+            font-size: 30px;
+            color: rgb(229, 228, 228);
+        }
+        
+        h2{
+            font-size: 20px;
+            text-align: center;
+            color: #008080;
+        }
+
+        /* bgabout */
+
+        .bgabout {
+            width: 107%;
+            height: 190vh;
+            margin-top: 100px;
+            color: #ffffff;
+            background-color: #141414;
+           
+        }
+        
+        .about {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+            padding: 1px;
+           margin-left: 20px;
+        }
+
+        .photo1 {
+            width: 90%;
+            height: 300px;
+            background-image: url(myBG.jpg);
+            background-size:cover;
+            background-position: center;
+        }
+        
+        .abouttext {
+            width: 90%;
+        }
+        
+        .atext {
+            margin-top: 50px;
+            font-size: 19px;
+            text-align: justify;
+            color: #e6e6e6;
+        }
+        
+        .basicInfo {
+            margin-top: 40px;
+        }
+        
+        .birth {
+            display: flex;
+        }
+        
+        h3 {
+            font-size: 23px;
+            color: #ffffff;
+        }
+        
+        h5 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            color: #aaaaaa;
+        }
+        
+        h6 {
+            font-size: 18px;
+            font-weight: 300;
+            margin-left: 10px;
+            color: #999999;
+        }
+
+        /* interest */
+
+        .hobby {
+            text-align: center;
+            margin-top: 10rem;
+            margin-left: -51px;
+        }
+
+        .gridinterest {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            height: 100px;
+            width: 108%;
+            margin: 0 auto;
+            margin-top: 4rem;
+        }
+        .interest{
+            padding-left: -10px;
+        }
+
+        .titlehobby{
+            margin: 0 auto;
+        }
+
+        .hobby1 {
+            width: 150px;
+            height: 50px;
+            background-color: #202020;
+            border-radius: 3px;
+            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+            display: flex;
+            color: #ffffff;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            margin-left: 15px;
+        }
+
+
+        /* services */
+
+
+        .services {
+            width: 100%;
+            height: 165vh;
+            background-color: #1a1a1a;
+        }
+
+        .servicedesign {
+            margin-bottom: 20px;
+            text-align: center;
+            color: #e6e6e6;
+            font-size:25px ;
+            padding-top: 30px;
+        }
+
+        .titleservice {
+            text-align: center;
+            color: #e6e6e6;
+            font-size: 20px;
+        }
+
+        .gridservices {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 1px;
+            background-color: transparent;
+            margin: 0 auto;
+            padding-left: 73px;
+            margin-top: 70px;
+            gap: 50px;
+        }
+
+        .b1 {
+            width: 300px;
+            height: 300px;
+            border-radius: 10%;
+            margin-top: 100px;
+            background-color: #222;
+            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.08);
+            padding-left: 20px;
+            padding-right: 20px;
+            color: #ffffff;
+            margin: 0 auto;
+            margin-left: 10px;
+            
+        }
+}

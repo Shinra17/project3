@@ -1,0 +1,677 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* background-color: #1E1E2F; */
+
+.background{
+    width: 1350px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: black;
+    font-family: sans-serif;
+}
+
+
+.header{
+    position: sticky;
+    top: 0;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1rem;
+    background-color: #090909;
+    color: whitesmoke;
+    padding: 20px;
+}
+
+.logo{
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 25px;
+    color: rgb(172, 172, 172);
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.sp{
+    color: #008080;
+}
+a{
+    font-size: 15px;
+    text-decoration: none;
+    color: whitesmoke;
+    transition: .3s ease-in-out;
+}
+
+.menu{
+    display: none;
+}
+
+a:hover{
+    font-size: 15.5px;
+    color: #008080;
+}
+
+.sp:hover{
+    font-size: 15px;
+    color: #008080;
+}
+
+.Portfolio{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 30px;
+    padding-right: 30px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 31;
+    color: rgb(172, 172, 172);
+}
+
+.body{
+    height: 620px;
+    width: 100%;
+    height: 45rem;
+}
+
+.info{
+
+    margin: 0 auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 45rem;
+    background-image: radial-gradient(rgba(0,0,0,0.8), rgba(0,0,0,1)), url(myBG.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-left: 20px;
+}
+
+
+.text{
+    text-align: start;
+    padding: 70px;
+    align-content: center;
+    
+}
+
+.second{
+    display: none;
+}
+
+
+h3{
+    color: #008080;
+    font-size: 40px;
+}
+h4{
+    color: #008080;
+    font-size: 33px;
+}
+
+.name{
+    font-size: 45px;
+    color:  white;
+    text-align: start;
+    
+}
+
+
+.grit2{
+    width: 440px;
+    font-size: 22px;
+    color:white;
+    line-height: 30px;
+    font-weight: 400;
+}
+span{
+    color:  #facc15;
+}
+
+button{
+    width: 140px;
+    height: 45px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 15px;
+    background-color: #036767;
+    color: white;
+    border: none;
+    transition: .3s ease-in-out;
+}
+
+button:hover{
+    background-color: #035959;
+    color: rgb(0, 0, 0);
+}
+
+.photo{
+    align-items: center;
+    display: flex;
+    margin-top: -100px;
+    
+}
+
+.myphoto {
+    width: 37rem;
+    height: 43.5rem;
+    border-radius: 10%;
+    background-image: radial-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(no_bg.png);
+    background-size: cover;  
+    background-position: center;
+    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.greetings{
+    height: 50rem;
+    padding-top: 170px;
+    text-align: center;
+    color: whitesmoke;
+    background-image: radial-gradient(rgba(0,0,0,0), rgba(0,0,0,2)), url(bg2.avif);
+    background-size: contain;
+    background-position: center;
+
+}
+
+.text2{
+    font-size: 40px;
+    color: rgb(226, 226, 226);
+
+}
+
+.greet{
+    text-align: center;
+    font-size: 20px;
+    width: 40rem;
+    font-size: 21px;
+    margin: 0 auto;
+    margin-top: 45px;
+    line-height: 35px;
+    color: rgb(211, 208, 208);
+    margin-top: 80px;
+}
+
+
+.faq{
+    padding-top: 90px;
+    text-align: center;
+    color: white;
+    background-image: radial-gradient(rgba(0,0,0,0.4), rgba(0,0,0,2)), url(bg3.jpg);
+    background-size: contain;
+    background-position: center;
+    height: auto;
+}
+
+.title{
+    margin-bottom: 60px;
+    font-size: 35px;
+}
+.question{
+    width: 40rem;
+   
+    margin-top: 120px;
+    margin: 0 auto;
+    text-align: start;
+    
+}
+
+details{
+    border: 1px solid gray;
+    padding: 20px;
+    transition: .3s ease-in-out;
+}
+details:hover{
+    background-color: #262626;
+}
+
+summary{
+    font-size: 18px;
+    font-weight: bold;
+    font-weight: 500;
+}
+
+.answer{
+font-size: 17px;
+color: #939292;
+}
+
+
+
+.last{
+    width: 100%;
+    height: 50px;
+    background-color: #090909;
+}
+
+
+@media (max-width: 1024px) {
+    
+    
+.background{
+    width: 100%;
+    margin: 0 auto;
+    background-color: black;
+    font-family: 'Lora', serif;
+}
+
+    .header{
+        position: sticky;
+        top: 0;
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 2rem;
+        background-color: #090909;
+        color: whitesmoke;
+        padding: 10px;
+    }
+
+    .logo{
+        font-size: 15px;
+        font-family: 'Dancing Script', cursive;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding-left: 15px;
+        color: rgb(172, 172, 172);
+    }
+
+    a{
+        display: none;
+    }
+    .Portfolio{
+        display: none;
+    }
+
+    .menu{
+        display: block;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+    }
+    .bars{
+        font-size: 30px;
+        transition: .3s ease-in-out;
+    }
+
+    .bars:hover{
+        font-size: 30.5px;
+        color: #008080;
+    }
+
+    .body{
+        width: 100%;
+        height: 40rem;
+        
+    }
+
+    .second{
+        display: none;
+    }
+
+    .info{
+        margin: 0 auto;
+        background-image: radial-gradient(rgba(0,0,0,0), rgba(0,0,0,1)), url(bg1.jpg);
+        background-size: cover;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .text{
+        text-align: center;
+        padding: 2%;
+        align-content: center;
+        
+    }
+    
+    h3{
+        color: #008080;
+        font-size: 20px;
+        text-align: center;
+    }
+    h4{
+        color: #008080;
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .name{
+        font-size: 30px;
+        color:  white;
+        text-align: center;
+        
+    }
+    
+    .grit1{
+        font-size: 40px;
+        margin-bottom: 10px;
+        color: #ff3c38;
+        text-align: center;
+    }
+    
+    .grit2{
+        width: 100%;
+        font-size: 15px;
+        color:white;
+        line-height: 30px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .photo{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .myphoto{
+        margin-top: 70px;
+        width: 100%;
+        height: 90%;
+        background-image: radial-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url(no_bg.png);
+        border-radius: 18%;
+        background-size: cover;  
+        background-position: center; 
+    }
+
+
+
+
+    .greetings{
+        width: 100%;
+        height: 35rem;
+        padding-top: 100px;
+        text-align: center;
+        color: white;
+        background-image: radial-gradient(rgba(0,0,0,0), rgba(0,0,0,2)), url(bg2.avif);
+        background-size: cover;
+        background-position: center;
+    
+    }
+
+    .text2{
+        font-size: 25px;
+    
+    }
+    
+    .greet{
+        padding: 25px;
+        text-align: center;
+        width: 100%;
+        font-size: 16px;
+        margin: 0 auto;
+        margin-top: 20px;
+        line-height: 35px;
+        color: white;
+    }
+    
+
+
+    .faq{
+        width: 100%;
+        padding-top: 50px;
+        text-align: center;
+        color: white;
+        background-image: radial-gradient(rgba(0,0,0,0.4), rgba(0,0,0,2)), url(bg3.jpg);
+        background-size: contain;
+        background-position: center;
+        height: auto;
+        padding: 20px;
+    }
+    
+    .title{
+        margin-bottom: 60px;
+        font-size: 25px;
+    }
+    .question{
+        width: 100%;
+        margin-top: 120px;
+        margin: 0 auto;
+        text-align: start;
+        
+    }
+    
+    details{
+        border: 1px solid gray;
+        padding: 15px;
+        transition: .3s ease-in-out;
+    }
+    details:hover{
+        background-color: #262626;
+    }
+    
+    summary{
+        font-size: 15px;
+        font-weight: bold;
+        font-weight: 500;
+    }
+    
+    .answer{
+    font-size: 12px;
+    color: #939292;
+    }
+
+}
+
+@media (max-width: 500px) {
+    
+    
+    .background{
+        width: 100%;
+        margin: 0 auto;
+        background-color: black;
+        font-family: 'Lora', serif;
+    }
+    
+        .header{
+            position: sticky;
+            top: 0;
+            display: grid;
+            width: 100%;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 2rem;
+            background-color: #090909;
+            color: whitesmoke;
+            padding: 10px;
+        }
+    
+        .logo{
+            font-size: 15px;
+            font-family: 'Dancing Script', cursive;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            padding-left: 15px;
+            color: rgb(172, 172, 172);
+        }
+    
+        a{
+            display: none;
+        }
+        .Portfolio{
+            display: none;
+        }
+    
+        .menu{
+            display: block;
+            display: flex;
+            justify-content: end;
+            align-items: end;
+        }
+        .bars{
+            font-size: 30px;
+            transition: .3s ease-in-out;
+        }
+    
+        .bars:hover{
+            font-size: 30.5px;
+            color: #008080;
+        }
+    
+        .body{
+            width: 100%;
+            height: 40rem;
+            
+        }
+    
+        .second{
+            display: block;
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            margin-top: -140px;
+            background-image: radial-gradient(rgba(0,0,0,0), rgba(0,0,0,0.3)), url(no_bg.png);
+            background-size: cover;  
+            background-position: center; 
+        }
+    
+        .info{
+            margin: 0 auto;
+            background-image: radial-gradient(rgba(0,0,0,0), rgba(0,0,0,1)), url(bg1.jpg);
+            background-size: cover;
+            display: grid;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+    
+        .text{
+            text-align: center;
+            margin-left: -20px;
+            align-content: center;
+            
+        }
+        
+        h3{
+            color: #008080;
+            font-size: 20px;
+            text-align: center;
+        }
+        h4{
+            color: #008080;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        .name{
+            font-size: 30px;
+            color:  white;
+            text-align: center;
+            
+        }
+        
+        .grit1{
+            font-size: 40px;
+            margin-bottom: 10px;
+            color: #ff3c38;
+            text-align: center;
+        }
+        
+        .grit2{
+            width: 100%;
+            font-size: 15px;
+            color:white;
+            line-height: 30px;
+            font-weight: 400;
+            text-align: center;
+        }
+    
+        .photo{
+            display: none;
+        }
+    
+    
+    
+    
+        .greetings{
+            width: 100%;
+            height: 35rem;
+            padding-top: 100px;
+            text-align: center;
+            color: white;
+            background-image: radial-gradient(rgba(0,0,0,0), rgba(0,0,0,2)), url(bg2.avif);
+            background-size: cover;
+            background-position: center;
+        
+        }
+    
+        .text2{
+            font-size: 25px;
+        
+        }
+        
+        .greet{
+            padding: 25px;
+            text-align: center;
+            width: 100%;
+            font-size: 16px;
+            margin: 0 auto;
+            margin-top: 20px;
+            line-height: 35px;
+            color: white;
+        }
+        
+    
+    
+        .faq{
+            width: 100%;
+            padding-top: 50px;
+            text-align: center;
+            color: white;
+            background-image: radial-gradient(rgba(0,0,0,0.4), rgba(0,0,0,2)), url(bg3.jpg);
+            background-size: contain;
+            background-position: center;
+            height: auto;
+            padding: 20px;
+        }
+        
+        .title{
+            margin-bottom: 60px;
+            font-size: 25px;
+        }
+        .question{
+            width: 100%;
+            margin-top: 120px;
+            margin: 0 auto;
+            text-align: start;
+            
+        }
+        
+        details{
+            border: 1px solid gray;
+            padding: 15px;
+            transition: .3s ease-in-out;
+        }
+        details:hover{
+            background-color: #262626;
+        }
+        
+        summary{
+            font-size: 15px;
+            font-weight: bold;
+            font-weight: 500;
+        }
+        
+        .answer{
+        font-size: 12px;
+        color: #939292;
+        }
+    
+    }
+
